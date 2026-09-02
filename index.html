@@ -112,68 +112,84 @@
   <hr class="divider" />
 
   <!-- ========== PROJECTS SECTION ========== -->
-  <section class="projects-section">
+  <section id="projects">
     <div class="container">
-      <div class="section-label">Work</div>
-      <h2 class="section-title">Projects that <em style="font-style:italic; color:var(--accent)">actually ship</em></h2>
-      
-      <div class="projects-grid-dark">
-        
-        <!-- Project 1: FinSight AI -->
-        <div class="project-card-dark">
-          <div class="project-badge dev">DEV PHASE</div>
-          <h3 class="project-name-dark">FinSight AI</h3>
-          <p class="project-desc-dark">AI-powered financial report generation system with async task processing — Celery, Redis, and FastAPI handling long-running jobs without blocking.</p>
-          <div class="project-stack-dark">
-            <span>FastAPI</span><span>Celery</span><span>Redis</span><span>PostgreSQL</span><span>JWT</span>
+      <h2 class="section-heading fade-in">PROJECTS</h2>
+
+      <!-- Featured project -->
+      <div class="project-featured fade-in">
+        <div class="project-number">01</div>
+        <div class="project-featured-content">
+          <div class="project-badge dev">IN DEVELOPMENT</div>
+          <h3 class="project-title">FinSight AI</h3>
+          <p class="project-desc">AI-powered financial report generation system with async task processing. Celery workers handle long-running Gemini 1.5 Flash inference jobs through Redis queues while FastAPI serves the API layer. JWT auth, PostgreSQL persistence, multi-module report assembly.</p>
+          <div class="project-stack">
+            <span>FastAPI</span><span>Celery</span><span>Redis</span><span>PostgreSQL</span><span>JWT</span><span>Gemini 1.5 Flash</span>
           </div>
-          <div class="project-links-dark">
+          <div class="project-links">
             <a href="#" class="project-link-disabled">🚧 Preview Soon</a>
-            <a href="https://github.com/valor0506" class="project-link-ghost">GitHub →</a>
+            <a href="https://github.com/valor0506" target="_blank" class="project-link-ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other projects grid -->
+      <div class="projects-grid fade-in">
+
+        <div class="project-card" data-accent="blue">
+          <div class="project-number">02</div>
+          <div class="project-badge live">FUNCTIONAL</div>
+          <h3 class="project-title">IMS</h3>
+          <p class="project-desc">Distributed incident management system — async signal ingestion, state-machine lifecycle tracking, severity-based alerting, and audit logging.</p>
+          <div class="project-stack">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Celery</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/valor0506/ims" target="_blank" class="project-link-ghost">GitHub →</a>
           </div>
         </div>
 
-        <!-- Project 2: GymRAG (In Development) -->
-        <div class="project-card-dark">
-          <div class="project-badge dev">DEV PHASE</div>
-          <h3 class="project-name-dark">GymRAG</h3>
-          <p class="project-desc-dark">Context-aware fitness Q&A using LangChain, ChromaDB, and Groq LLM — semantic search with ~2s latency.</p>
-          <div class="project-stack-dark">
+        <div class="project-card" data-accent="green">
+          <div class="project-number">03</div>
+          <div class="project-badge dev">IN DEVELOPMENT</div>
+          <h3 class="project-title">GymRAG</h3>
+          <p class="project-desc">Context-aware fitness Q&A using LangChain, ChromaDB, and Groq LLM — semantic search over a curated knowledge base with ~2s latency.</p>
+          <div class="project-stack">
             <span>LangChain</span><span>ChromaDB</span><span>FastAPI</span><span>Groq</span><span>Python</span>
           </div>
-          <div class="project-links-dark">
+          <div class="project-links">
             <a href="#" class="project-link-disabled">🚧 Preview Soon</a>
-            <a href="https://github.com/valor0506/gym-knowledge-base" class="project-link-ghost">GitHub →</a>
+            <a href="https://github.com/valor0506/gym-knowledge-base" target="_blank" class="project-link-ghost">GitHub →</a>
           </div>
         </div>
 
-        <!-- Project 3: CodityViz (LIVE) -->
-        <div class="project-card-dark">
-          <div class="project-badge live">LIVE DEMO</div>
-          <h3 class="project-name-dark">CodityViz</h3>
-          <p class="project-desc-dark">Interactive DSA visualizer with state-based playback architecture — precomputed JSON states for instant replay.</p>
-          <div class="project-stack-dark">
+        <div class="project-card" data-accent="teal">
+          <div class="project-number">04</div>
+          <div class="project-badge live">LIVE</div>
+          <h3 class="project-title">CodityViz</h3>
+          <p class="project-desc">Interactive DSA visualizer with state-based playback architecture — precomputed JSON states for instant step-through replay of sorting and search algorithms.</p>
+          <div class="project-stack">
             <span>Node.js</span><span>Express</span><span>MongoDB</span><span>React</span>
           </div>
-          <div class="project-links-dark">
+          <div class="project-links">
             <a href="https://codity-viz.vercel.app/" target="_blank" class="project-link-demo">Live Demo →</a>
-            <a href="https://github.com/valor0506/CodityViz" class="project-link-ghost">GitHub →</a>
+            <a href="https://github.com/valor0506/CodityViz" target="_blank" class="project-link-ghost">GitHub →</a>
           </div>
         </div>
 
-        <!-- Project 4: USB Access Control -->
-        <div class="project-card-dark">
+        <div class="project-card" data-accent="amber">
+          <div class="project-number">05</div>
           <div class="project-badge live">FUNCTIONAL</div>
-          <h3 class="project-name-dark">USB Access Control</h3>
-          <p class="project-desc-dark">OTP authentication + webcam intrusion detection with email alerts — real-time device monitoring and audit logging.</p>
-          <div class="project-stack-dark">
+          <h3 class="project-title">USB Access Control</h3>
+          <p class="project-desc">OTP authentication + webcam intrusion detection with email alerts — real-time device monitoring and audit logging for physical security.</p>
+          <div class="project-stack">
             <span>Python</span><span>OpenCV</span><span>SMTP</span><span>SQLite</span>
           </div>
-          <div class="project-links-dark">
-            <a href="#" class="project-link-demo">View Demo →</a>
-            <a href="https://github.com/valor0506" class="project-link-ghost">GitHub →</a>
+          <div class="project-links">
+            <a href="https://github.com/valor0506" target="_blank" class="project-link-ghost">GitHub →</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
