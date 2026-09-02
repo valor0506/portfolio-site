@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>S Suvan — SDE / Backend / AI-ML</title>
-  
+  <title>S Suvan — Backend Dev / AI-ML / SDE</title>
+  <meta name="description" content="S Suvan — Final-year B.Tech CSE student at SRM Institute. Backend developer building production systems with FastAPI, Python, and AI/ML." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -13,17 +14,33 @@
 </head>
 
 <body>
+  <!-- ========== NAV ========== -->
   <nav>
     <a href="#hero" class="nav-logo">SS.</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="./assets/Suvan_Resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
     </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#projects" class="mobile-menu-link">Projects</a>
+    <a href="#experience" class="mobile-menu-link">Experience</a>
+    <a href="#stack" class="mobile-menu-link">Stack</a>
+    <a href="./assets/Suvan_Resume.pdf" target="_blank" class="mobile-menu-link">Resume ↗</a>
+    <a href="#contact" class="mobile-menu-link">Get in Touch</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
   <section id="hero">
     <div class="hero-left fade-in">
       <h1 class="hero-name">S SUVAN</h1>
@@ -63,8 +80,7 @@
     </div>
   </section>
 
-  
-
+  <!-- ========== ABOUT ========== -->
   <section id="about">
     <div class="container">
       <h2 class="section-heading fade-in">ABOUT</h2>
@@ -109,9 +125,7 @@
     </div>
   </section>
 
-  <hr class="divider" />
-
-  <!-- ========== PROJECTS SECTION ========== -->
+  <!-- ========== PROJECTS ========== -->
   <section id="projects">
     <div class="container">
       <h2 class="section-heading fade-in">PROJECTS</h2>
@@ -247,8 +261,6 @@
       </div>
     </div>
   </section>
-  
-  <hr class="divider" />
 
   <!-- ========== STACK (Skills) ========== -->
   <section id="stack">
@@ -325,14 +337,13 @@
     </div>
   </section>
 
-  
+  <!-- ========== CONTACT ========== -->
   <section id="contact">
     <div class="container">
       <div class="contact-inner fade-in">
         <div>
-          <div class="section-label">Contact</div>
-          <h2 class="section-title">Let's build<br><em style="font-style:italic; color:var(--accent)">something together</em></h2>
-          <p class="section-sub" style="margin-top:1rem">
+          <h2 class="section-heading">GET IN TOUCH</h2>
+          <p class="contact-sub">
             Open to full-time SDE, Backend, and AI/ML roles. Also happy to chat about interesting projects.
           </p>
 
@@ -363,6 +374,16 @@
                 <div>
                   <div class="contact-link-name">LinkedIn</div>
                   <div class="contact-link-sub">suvan-satish</div>
+                </div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a href="https://leetcode.com/u/HhJDY8wPqE/" target="_blank" class="contact-link">
+              <div class="contact-link-left">
+                <div class="contact-link-icon">LC</div>
+                <div>
+                  <div class="contact-link-name">LeetCode</div>
+                  <div class="contact-link-sub">218 solved · 100 Days Badge</div>
                 </div>
               </div>
               <span class="contact-link-arrow">↗</span>
@@ -398,13 +419,12 @@
     </div>
   </section>
 
-    <!-- ========== SKILLS SECTION ========== -->
-  
-
+  <!-- ========== FOOTER ========== -->
   <footer>
     <p>© 2026 S Suvan</p>
     <div class="footer-links">
       <a href="https://github.com/valor0506" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/suvan-satish" target="_blank">LinkedIn</a>
       <a href="#hero">Back to top ↑</a>
     </div>
   </footer>
